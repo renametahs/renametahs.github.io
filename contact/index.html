@@ -2,18 +2,34 @@
 
 
 
-<meta name="description" content="Some background/about can go here.">     <header> <a href="/" class="logo" accesskey="x"> <h1>Background</h1> </a> </header>
+<meta name="description" content="Some background/about can go here.">     <header> <a href="/" class="logo" accesskey="x"> <h1>Contact Us</h1> </a> </header>
 
 
 <nav class="navigation"> <ul> <li class="current"> <a href="/"> Home </a> </li> <li> <a href="/background/"> Background </a> </li> </li> <li> <a href="/faqs/"> FAQs </a> </li>
   <li> <a href="/emailschoolboard/"> Email School Board </a> </li> <li> <a href="/getinvolved/"> Get Involved </a> </li> <li> <a href="/contact/"> Contact Us</a> </li> </ul> </nav> 
 
 
-<main class="content">  <article>  <header> <h2>Frequently Asked Questions</h2> <small>Probably some info from the "talking points" doc can go here.</small> </header>  
+<main class="content">  <article>  <header> <h2>Contact Us</h2>  <a href="javascript:void(0);" onclick="openEmail()"><small>renametahs@gmail.com</small></a> </header>  
 
 
-    <p>Example text, example text, etc</p>
 
+
+<script type="text/javascript">
+  function openEmail() {
+    const isAndroid = /(android)/i.test(navigator.userAgent);
+    const subject = encodeURIComponent(``.trim());
+    const body = encodeURIComponent(
+      isAndroid ?
+      ``.trim() :
+      ``.trim()
+    );
+    const recipients = `renametahs@gmail.com`;
+    const cc = ``;
+    const ccText = cc !== null && cc.length > 0 ? `cc=${cc}&` : ``;
+    location.href = `mailto:${recipients}?${ccText}subject=${subject}&body=${body}`;
+  }
+
+</script>
 
 <!--
  © Tunghsiao Liu.
